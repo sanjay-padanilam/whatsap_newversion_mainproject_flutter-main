@@ -141,11 +141,13 @@ class UpdatesScreen extends StatelessWidget {
               imageurl: DatabaseConstant.updatetile[index]["profile"],
               name: DatabaseConstant.updatetile[index]["name"],
               time: DatabaseConstant.updatetile[index]["time"],
+              statusprofile: DatabaseConstant.updatetile[index]
+                  ["statusprofile"],
             ),
         separatorBuilder: (context, index) => SizedBox(
               height: 10,
             ),
-        itemCount: 10);
+        itemCount: DatabaseConstant.updatetile.length);
   }
 }
 
