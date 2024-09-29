@@ -20,7 +20,7 @@ class StatusViewScreen extends StatefulWidget {
 class _StatusViewScreenState extends State<StatusViewScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 30)).then(
+    Future.delayed(Duration(seconds: 10)).then(
       (value) => Navigator.pop(context),
     );
     super.initState();
