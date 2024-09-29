@@ -84,7 +84,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28602951/pexels-photo-28602951/free-photo-of-sunset-over-coastal-promenade-with-scenic-view.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/28528949/pexels-photo-28528949/free-photo-of-close-up-portrait-of-a-large-brown-dog.jpeg?auto=compress&cs=tinysrgb&w=600",
       "name": "Jane Smith",
@@ -92,7 +92,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28658172/pexels-photo-28658172/free-photo-of-stylish-individual-with-tattoos-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/1454786/pexels-photo-1454786.jpeg?auto=compress&cs=tinysrgb&w=600",
       "name": "Emily Johnson",
@@ -108,7 +108,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28666583/pexels-photo-28666583/free-photo-of-man-with-intricate-face-paint-in-dramatic-lighting.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/2084291/pexels-photo-2084291.jpeg?auto=compress&cs=tinysrgb&w=400",
       "name": "Linda Davis",
@@ -124,7 +124,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28657883/pexels-photo-28657883/free-photo-of-smiling-young-man-in-casual-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/257472/pexels-photo-257472.jpeg?auto=compress&cs=tinysrgb&w=400",
       "name": "Patricia Taylor",
@@ -132,7 +132,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28602941/pexels-photo-28602941/free-photo-of-bustling-street-scene-in-european-city-center.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/707612/pexels-photo-707612.jpeg?auto=compress&cs=tinysrgb&w=400",
       "name": "Charles Martinez",
@@ -140,7 +140,7 @@ class DatabaseConstant {
     },
     {
       "statusprofile":
-          "https://images.pexels.com/photos/28628625/pexels-photo-28628625/free-photo-of-black-and-white-portrait-of-smiling-man-with-flower.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/28658172/pexels-photo-28658172/free-photo-of-stylish-individual-with-tattoos-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600",
       "profile":
           "https://images.pexels.com/photos/947185/pexels-photo-947185.jpeg?auto=compress&cs=tinysrgb&w=400",
       "name": "Jessica Anderson",
@@ -154,16 +154,5 @@ class DatabaseConstant {
       "name": "Steven Lee",
       "time": "05:30 PM"
     }
-  ];
-  static List statusprofile = [
-    "https://images.pexels.com/photos/28369598/pexels-photo-28369598/free-photo-of-woman-enjoying-dubai-marina-skyline-view.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28657883/pexels-photo-28657883/free-photo-of-smiling-young-man-in-casual-white-shirt.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28658172/pexels-photo-28658172/free-photo-of-stylish-individual-with-tattoos-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28666583/pexels-photo-28666583/free-photo-of-man-with-intricate-face-paint-in-dramatic-lighting.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28667269/pexels-photo-28667269/free-photo-of-monochrome-street-photography-in-tigre-argentina.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28602951/pexels-photo-28602951/free-photo-of-sunset-over-coastal-promenade-with-scenic-view.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28602941/pexels-photo-28602941/free-photo-of-bustling-street-scene-in-european-city-center.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28658172/pexels-photo-28658172/free-photo-of-stylish-individual-with-tattoos-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600"
-        "https://images.pexels.com/photos/28666583/pexels-photo-28666583/free-photo-of-man-with-intricate-face-paint-in-dramatic-lighting.jpeg?auto=compress&cs=tinysrgb&w=600"
   ];
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:new_version_whatsap/utils/Constants/Colors_Constants.dart';
 
 class PersonalChatscreeen extends StatelessWidget {
@@ -53,9 +54,16 @@ class PersonalChatscreeen extends StatelessWidget {
                 SizedBox(
                   width: 15,
                 ),
-                Icon(
-                  Icons.camera_alt_outlined,
-                  color: ColorsConstant.lightblack,
+                InkWell(
+                  onTap: () async {
+                    final ImagePicker picker = ImagePicker();
+                    final XFile? photo =
+                        await picker.pickImage(source: ImageSource.camera);
+                  },
+                  child: Icon(
+                    Icons.camera_alt_outlined,
+                    color: ColorsConstant.lightblack,
+                  ),
                 ),
               ],
             ),
@@ -111,7 +119,6 @@ class PersonalChatscreeen extends StatelessWidget {
     return PreferredSize(
       preferredSize: Size.fromHeight(65),
       child: AppBar(
-        elevation: 0,
         leading: InkWell(
           onTap: () {
             Navigator.pop(context);
@@ -170,7 +177,7 @@ class PersonalChatscreeen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 10, right: 20),
+            padding: EdgeInsets.only(top: 10, right: 10),
             child: Icon(
               Icons.call_outlined,
               size: 28,
@@ -178,7 +185,28 @@ class PersonalChatscreeen extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(top: 10, right: 10),
-            child: Icon(Icons.more_vert),
+            child: PopupMenuButton(
+              iconSize: 30,
+              itemBuilder: (context) => [
+                PopupMenuItem(child: Text("View contact")),
+                PopupMenuItem(child: Text("Report")),
+                PopupMenuItem(child: Text("Block")),
+                PopupMenuItem(child: Text("Search")),
+                PopupMenuItem(child: Text("Mute notification")),
+                PopupMenuItem(
+                  child: Text("Disappearing messages"),
+                ),
+                PopupMenuItem(child: Text("Wallpaper")),
+                PopupMenuItem(
+                    child: Row(
+                  children: [
+                    Text("More"),
+                    Spacer(),
+                    Icon(Icons.arrow_forward_sharp)
+                  ],
+                )),
+              ],
+            ),
           ),
         ],
       ),

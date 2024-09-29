@@ -38,10 +38,15 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          height: 600,
-          width: double.infinity,
-          child: Image(image: NetworkImage(widget.imageurl)),
+        InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Container(
+            height: 600,
+            width: double.infinity,
+            child: Image(image: NetworkImage(widget.imageurl)),
+          ),
         ),
         SizedBox(
           height: 100,
@@ -74,6 +79,7 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
             ClipRRect(
                 borderRadius: BorderRadius.circular(50),
                 child: Image(
+                    fit: BoxFit.cover,
                     height: 50,
                     width: 50,
                     image: NetworkImage(widget.profile))),
@@ -100,9 +106,17 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
         ),
       ),
       actions: [
-        Padding(
-          padding: EdgeInsets.only(top: 10, right: 10),
-          child: Icon(Icons.more_vert),
+        PopupMenuButton(
+          itemBuilder: (context) => [
+            PopupMenuItem(child: Text("Mute")),
+            PopupMenuItem(child: Text("Message")),
+            PopupMenuItem(child: Text("Voice call")),
+            PopupMenuItem(child: Text("Vedio call")),
+            PopupMenuItem(child: Text("View contact")),
+            PopupMenuItem(
+              child: Text("Report"),
+            ),
+          ],
         ),
       ],
     );
