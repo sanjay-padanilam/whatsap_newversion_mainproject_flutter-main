@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:new_version_whatsap/utils/Constants/Colors_Constants.dart';
 import 'package:new_version_whatsap/utils/Constants/DataBase_Constants.dart';
 import 'package:new_version_whatsap/view/Bottom_Navbar_Screen/Home_Chat_Screen/widgets/homescreen_tile.dart';
@@ -130,10 +131,17 @@ class HomeChatScreen extends StatelessWidget {
       actions: [
         Icon(Icons.qr_code_scanner_sharp),
         SizedBox(
-          width: 15,
+          width: 20,
         ),
-        Icon(
-          Icons.camera_alt_outlined,
+        InkWell(
+          onTap: () async {
+            final ImagePicker picker = ImagePicker();
+            final XFile? photo =
+                await picker.pickImage(source: ImageSource.camera);
+          },
+          child: Icon(
+            Icons.camera_alt_sharp,
+          ),
         ),
         SizedBox(
           width: 9,
