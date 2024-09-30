@@ -3,6 +3,7 @@ import 'package:new_version_whatsap/utils/Constants/Colors_Constants.dart';
 import 'package:new_version_whatsap/utils/Constants/DataBase_Constants.dart';
 import 'package:new_version_whatsap/view/Bottom_Navbar_Screen/Home_Chat_Screen/widgets/homescreen_tile.dart';
 import 'package:new_version_whatsap/view/Settings_screen/Settings_Screen.dart';
+import 'package:new_version_whatsap/view/new_message_screen/new_message_screen.dart';
 
 class HomeChatScreen extends StatelessWidget {
   HomeChatScreen({super.key});
@@ -10,6 +11,20 @@ class HomeChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: ColorsConstant.PRIMARYCOLOR,
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => NewMessageScreen(),
+              ));
+        },
+        child: Icon(
+          Icons.messenger_rounded,
+          color: ColorsConstant.PRIMARYwhite,
+        ),
+      ),
       appBar: appbar_section(),
       body: _body_section(),
     );

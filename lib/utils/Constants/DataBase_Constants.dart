@@ -155,4 +155,56 @@ class DatabaseConstant {
       "time": "05:30 PM"
     }
   ];
+  static List newcontactlist = [
+    {
+      "profile":
+          "https://images.pexels.com/photos/3951742/pexels-photo-3951742.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Steven Lee"
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/947185/pexels-photo-947185.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Jessica ",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/707612/pexels-photo-707612.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Charles ",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/707612/pexels-photo-707612.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Charles ",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/2084291/pexels-photo-2084291.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Linda Davis",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/257472/pexels-photo-257472.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Patricia",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/3951742/pexels-photo-3951742.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Steven "
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/947185/pexels-photo-947185.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Jessica ",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/707612/pexels-photo-707612.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Charles",
+    },
+    {
+      "profile":
+          "https://images.pexels.com/photos/707612/pexels-photo-707612.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "name": "Charles",
+    },
+  ];
 }
