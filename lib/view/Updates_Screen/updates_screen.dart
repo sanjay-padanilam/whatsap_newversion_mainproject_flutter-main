@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:new_version_whatsap/global_widgets/updates_tile.dart';
 import 'package:new_version_whatsap/utils/Constants/Colors_Constants.dart';
 import 'package:new_version_whatsap/utils/Constants/DataBase_Constants.dart';
@@ -125,7 +126,11 @@ class UpdatesScreen extends StatelessWidget {
           right: 10,
           child: FloatingActionButton(
             backgroundColor: Colors.green,
-            onPressed: () {},
+            onPressed: () async {
+              final ImagePicker picker = ImagePicker();
+              final XFile? photo =
+                  await picker.pickImage(source: ImageSource.camera);
+            },
             child: Icon(Icons.camera_alt),
           ),
         ),
