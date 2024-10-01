@@ -117,7 +117,7 @@ class PersonalChatscreeen extends StatelessWidget {
 
   PreferredSize _built_appbar_section(context) {
     return PreferredSize(
-      preferredSize: Size.fromHeight(65),
+      preferredSize: Size.fromHeight(60),
       child: AppBar(
         leading: InkWell(
           onTap: () {

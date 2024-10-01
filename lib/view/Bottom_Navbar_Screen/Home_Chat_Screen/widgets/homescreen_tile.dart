@@ -34,7 +34,10 @@ class home_screen_tile extends StatelessWidget {
       ),
       title: Text(
         name,
-        style: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
+        style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 17,
+            color: ColorsConstant.PRIMARYblack),
       ),
       subtitle: Text(
         message,

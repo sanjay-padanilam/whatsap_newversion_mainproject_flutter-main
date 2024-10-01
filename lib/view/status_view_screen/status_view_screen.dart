@@ -29,6 +29,7 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorsConstant.darkblack,
       appBar: build_appbar_section(context),
       body: status_view_section(),
     );
@@ -48,15 +49,55 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
             child: Image(image: NetworkImage(widget.imageurl)),
           ),
         ),
-        SizedBox(
-          height: 100,
-        )
+        Spacer(),
+        bottom_bar_section(),
       ],
+    );
+  }
+
+  Container bottom_bar_section() {
+    return Container(
+      height: 65,
+      decoration: BoxDecoration(color: ColorsConstant.darkblack),
+      child: Row(
+        children: [
+          Container(
+            margin: EdgeInsets.all(5),
+            padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
+            decoration: BoxDecoration(
+                color: ColorsConstant.PRIMARYgreyt,
+                borderRadius: BorderRadius.circular(30)),
+            child: Container(
+              width: 290,
+              child: TextFormField(
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                decoration: InputDecoration(
+                  hintStyle: TextStyle(color: ColorsConstant.PRIMARYwhite),
+                  hintText: "Replay",
+                  border: InputBorder.none,
+                ),
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(13),
+            decoration: BoxDecoration(
+                color: ColorsConstant.PRIMARYCOLOR,
+                borderRadius: BorderRadius.circular(30)),
+            child: Icon(
+              Icons.favorite,
+              size: 23,
+              color: ColorsConstant.PRIMARYwhite,
+            ),
+          )
+        ],
+      ),
     );
   }
 
   AppBar build_appbar_section(BuildContext context) {
     return AppBar(
+      backgroundColor: ColorsConstant.darkblack,
       elevation: 0,
       leading: InkWell(
         onTap: () {
@@ -67,10 +108,11 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
           child: Icon(
             Icons.arrow_back,
             size: 30,
+            color: ColorsConstant.PRIMARYwhite,
           ),
         ),
       ),
-      leadingWidth: 20,
+      leadingWidth: 30,
       title: Padding(
         padding: EdgeInsets.only(top: 6),
         child: Row(
@@ -89,7 +131,8 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
                 children: [
                   Text(
                     widget.name,
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                        fontSize: 20, color: ColorsConstant.PRIMARYwhite),
                   ),
                   SizedBox(
                     height: 3,
@@ -97,7 +140,7 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
                   Text(
                     widget.time,
                     style: TextStyle(
-                        fontSize: 15, color: ColorsConstant.lightblack2),
+                        fontSize: 15, color: ColorsConstant.PRIMARYwhite),
                   )
                 ],
               ),
@@ -107,6 +150,7 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
       ),
       actions: [
         PopupMenuButton(
+          iconColor: ColorsConstant.PRIMARYwhite,
           itemBuilder: (context) => [
             PopupMenuItem(child: Text("Mute")),
             PopupMenuItem(child: Text("Message")),

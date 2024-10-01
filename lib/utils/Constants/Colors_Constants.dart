@@ -10,4 +10,5 @@ class ColorsConstant {
   static const Color lightblack = Colors.black38;
   static const Color lightblack2 = Colors.black54;
   static const Color darkwhite = Color(0xfff6f5f3);
+  static const Color darkblack = Color(0xff0000);
 }

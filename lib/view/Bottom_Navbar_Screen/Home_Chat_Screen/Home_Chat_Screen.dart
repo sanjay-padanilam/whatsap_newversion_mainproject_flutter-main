@@ -76,7 +76,6 @@ class HomeChatScreen extends StatelessWidget {
               tabAlignment: TabAlignment.start,
               isScrollable: true,
               indicator: BoxDecoration(
-                  // shape: BoxShape.rectangle,
                   color: ColorsConstant.PRIMARYCOLOR,
                   borderRadius: BorderRadius.circular(20)),
               tabs: [
