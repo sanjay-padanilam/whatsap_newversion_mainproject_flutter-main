@@ -35,7 +35,7 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
     );
   }
 
-  Column status_view_section() {
+  Widget status_view_section() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -43,10 +43,13 @@ class _StatusViewScreenState extends State<StatusViewScreen> {
           onTap: () {
             Navigator.pop(context);
           },
-          child: Container(
-            height: 600,
-            width: double.infinity,
-            child: Image(image: NetworkImage(widget.imageurl)),
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 25),
+            child: Container(
+              height: 600,
+              width: double.infinity,
+              child: Image(image: NetworkImage(widget.imageurl)),
+            ),
           ),
         ),
         Spacer(),
