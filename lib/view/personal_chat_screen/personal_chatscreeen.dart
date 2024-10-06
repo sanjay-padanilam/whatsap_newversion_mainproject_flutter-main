@@ -13,11 +13,11 @@ class PersonalChatscreeen extends StatelessWidget {
     return Scaffold(
       appBar: _built_appbar_section(context),
       body: _built_first_container_section(),
-      bottomSheet: _built_bottembar_section(),
+      bottomSheet: _built_bottembar_section(context),
     );
   }
 
-  Container _built_bottembar_section() {
+  Container _built_bottembar_section(context) {
     return Container(
       height: 65,
       decoration: BoxDecoration(color: ColorsConstant.PRIMARYgreyt),
@@ -47,9 +47,82 @@ class PersonalChatscreeen extends StatelessWidget {
                         hintText: "Message", border: InputBorder.none),
                   ),
                 ),
-                Icon(
-                  Icons.attachment_outlined,
-                  color: ColorsConstant.lightblack,
+                InkWell(
+                  onTap: () {
+                    showModalBottomSheet(
+                      constraints: BoxConstraints(maxHeight: 300),
+                      useSafeArea: true,
+                      context: context,
+                      builder: (context) => Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 24),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    Icons.document_scanner,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.camera_alt,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.image,
+                                    size: 45,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    Icons.headphones,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.location_on,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.payments,
+                                    size: 45,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    Icons.person,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.poll,
+                                    size: 45,
+                                  ),
+                                  Icon(
+                                    Icons.image_search_rounded,
+                                    size: 45,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                          height: 300,
+                          width: 350),
+                    );
+                  },
+                  child: Icon(
+                    Icons.attachment_outlined,
+                    color: ColorsConstant.lightblack,
+                  ),
                 ),
                 SizedBox(
                   width: 15,
